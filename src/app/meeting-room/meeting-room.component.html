@@ -1,0 +1,40 @@
+<div id="vid_div">
+  <div>
+    <h3>Your camera</h3>
+    <video #myVideo id="local_video" muted autoplay></video>
+  </div>
+
+  <div>
+    <h3>Remote video</h3>
+    <video #remoteVideo id="remote_video" autoplay></video>
+  </div>
+  <!--
+    <div>
+      <h3>Remote Screenshare</h3>
+      <video id="remote_pc_video" autoplay></video>
+    </div>
+    -->
+</div>
+<div id="button_div">
+  <div>
+    <input type="text" id="target" placeholder="Target" value="7079230">
+    <label for="target">Input a meeting ID, or email address of a StarLeaf user</label>
+  </div>
+  <div>
+    <select id="cloud_select">
+      <option value="api.starleaf.com" selected>Live</option>
+      <option value="api.beta.starleaf.com">Beta</option>
+      <option value="api.dev-net.starleaf.com">Dev</option>
+    </select>
+  </div>
+  <div>
+    <button id="start_call">Start the call</button>
+    <button id="end_call" style="display: none;">Hang up</button>
+  </div>
+</div>
+<div style="padding: 30px;">
+  <canvas id="vu_meter" style="height: 100px; width: 100%;"></canvas>
+</div>
+<div id="log_div">
+  <h3>Log output</h3>
+</div>
